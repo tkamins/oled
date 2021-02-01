@@ -1,0 +1,9 @@
+SSD1322_HW_Driver.c:33:6:SSD1322_HW_drive_CS_low	0	static
+SSD1322_HW_Driver.c:48:6:SSD1322_HW_drive_CS_high	0	static
+SSD1322_HW_Driver.c:62:6:SSD1322_HW_drive_DC_low	0	static
+SSD1322_HW_Driver.c:75:6:SSD1322_HW_drive_DC_high	0	static
+SSD1322_HW_Driver.c:88:6:SSD1322_HW_drive_RESET_low	0	static
+SSD1322_HW_Driver.c:101:6:SSD1322_HW_drive_RESET_high	0	static
+SSD1322_HW_Driver.c:114:6:SSD1322_HW_SPI_send_byte	16	static
+SSD1322_HW_Driver.c:128:6:SSD1322_HW_SPI_send_array	0	static
+SSD1322_HW_Driver.c:145:6:SSD1322_HW_msDelay	0	static
