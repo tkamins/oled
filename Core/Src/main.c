@@ -127,7 +127,7 @@ int main(void)
 
   				// send a frame buffer to the display
   				send_buffer_to_OLED(tx_buf, 0, 0);
-  				HAL_Delay(2000);
+  				HAL_Delay(1500);
 
   				// Let's try some features of this OLED display
 
