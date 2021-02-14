@@ -24,10 +24,14 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  ../Core/Src/SSD1322_OLED_lib/SSD1322_HW_Driver.h \
  ../Core/Src/SSD1322_OLED_lib/SSD1322_API.h \
- g:\workspacecube\oled\core\src\ssd1322_oled_lib\ssd1322_hw_driver.h \
+ ../Core/Src/SSD1322_OLED_lib/../SSD1322_OLED_lib/SSD1322_HW_Driver.h \
  ../Core/Src/SSD1322_OLED_lib/SSD1322_GFX.h \
  ../Core/Src/SSD1322_OLED_lib/Fonts/FreeMono12pt7b.h \
  ../Core/Src/SSD1322_OLED_lib/Fonts/FreeSansOblique9pt7b.h
@@ -84,13 +88,21 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
 
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h:
+
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h:
+
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h:
+
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
+
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 
 ../Core/Src/SSD1322_OLED_lib/SSD1322_HW_Driver.h:
 
 ../Core/Src/SSD1322_OLED_lib/SSD1322_API.h:
 
-g:\workspacecube\oled\core\src\ssd1322_oled_lib\ssd1322_hw_driver.h:
+../Core/Src/SSD1322_OLED_lib/../SSD1322_OLED_lib/SSD1322_HW_Driver.h:
 
 ../Core/Src/SSD1322_OLED_lib/SSD1322_GFX.h:
 
