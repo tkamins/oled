@@ -7,7 +7,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
+  * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under BSD 3-Clause license,
@@ -58,14 +58,11 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define SPI5_CS_Pin GPIO_PIN_1
-#define SPI5_CS_GPIO_Port GPIOA
-#define SPI5_DC_Pin GPIO_PIN_5
-#define SPI5_DC_GPIO_Port GPIOA
-#define SPI5_RESET_Pin GPIO_PIN_6
-#define SPI5_RESET_GPIO_Port GPIOA
-#define LED_Pin GPIO_PIN_7
-#define LED_GPIO_Port GPIOA
+#define ir_clk_Pin GPIO_PIN_13
+#define ir_clk_GPIO_Port GPIOC
+#define ir_sen_Pin GPIO_PIN_2
+#define ir_sen_GPIO_Port GPIOB
+#define ir_sen_EXTI_IRQn EXTI2_IRQn
 #define SPI2_DC_Pin GPIO_PIN_12
 #define SPI2_DC_GPIO_Port GPIOB
 #define SPI2_RESET_Pin GPIO_PIN_13

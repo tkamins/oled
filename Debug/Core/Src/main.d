@@ -29,12 +29,15 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
  ../Core/Src/SSD1322_OLED_lib/SSD1322_HW_Driver.h \
  ../Core/Src/SSD1322_OLED_lib/SSD1322_API.h \
  ../Core/Src/SSD1322_OLED_lib/../SSD1322_OLED_lib/SSD1322_HW_Driver.h \
  ../Core/Src/SSD1322_OLED_lib/SSD1322_GFX.h \
  ../Core/Src/SSD1322_OLED_lib/Fonts/FreeMono12pt7b.h \
- ../Core/Src/SSD1322_OLED_lib/Fonts/FreeSansOblique9pt7b.h
+ ../Core/Src/SSD1322_OLED_lib/Fonts/FreeSansOblique9pt7b.h \
+ ../Core/Inc/tom_and_jerry.h ../Core/Inc/creeper.h ../Core/Inc/krecik.h \
+ ../Core/Inc/pat_i_mat.h
 
 ../Core/Inc/main.h:
 
@@ -98,6 +101,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
+
 ../Core/Src/SSD1322_OLED_lib/SSD1322_HW_Driver.h:
 
 ../Core/Src/SSD1322_OLED_lib/SSD1322_API.h:
@@ -109,3 +114,11 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Src/SSD1322_OLED_lib/Fonts/FreeMono12pt7b.h:
 
 ../Core/Src/SSD1322_OLED_lib/Fonts/FreeSansOblique9pt7b.h:
+
+../Core/Inc/tom_and_jerry.h:
+
+../Core/Inc/creeper.h:
+
+../Core/Inc/krecik.h:
+
+../Core/Inc/pat_i_mat.h:

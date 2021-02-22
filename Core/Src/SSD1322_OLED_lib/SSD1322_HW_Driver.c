@@ -33,10 +33,6 @@
 void SSD1322_HW_drive_CS_low()
 {
 	HAL_GPIO_WritePin(SPI2_CS_GPIO_Port, SPI2_CS_Pin, 0);
-
-	//HAL_GPIO_WritePin(SPI5_CS_GPIO_Port, SPI5_CS_Pin, 0);
-
-
 }
 
 //====================== CS pin high ========================//
@@ -48,9 +44,6 @@ void SSD1322_HW_drive_CS_low()
 void SSD1322_HW_drive_CS_high()
 {
 	HAL_GPIO_WritePin(SPI2_CS_GPIO_Port, SPI2_CS_Pin, 1);
-
-	//HAL_GPIO_WritePin(SPI5_CS_GPIO_Port, SPI5_CS_Pin, 1);
-
 }
 
 //====================== DC pin low ========================//
@@ -62,8 +55,6 @@ void SSD1322_HW_drive_CS_high()
 void SSD1322_HW_drive_DC_low()
 {
 	HAL_GPIO_WritePin(SPI2_DC_GPIO_Port, SPI2_DC_Pin, 0);
-
-	//HAL_GPIO_WritePin(SPI5_DC_GPIO_Port, SPI5_DC_Pin, 0);
 }
 
 //====================== DC pin high ========================//
@@ -75,8 +66,6 @@ void SSD1322_HW_drive_DC_low()
 void SSD1322_HW_drive_DC_high()
 {
 	HAL_GPIO_WritePin(SPI2_DC_GPIO_Port, SPI2_DC_Pin, 1);
-
-	//HAL_GPIO_WritePin(SPI5_DC_GPIO_Port, SPI5_DC_Pin, 1);
 }
 
 //====================== RESET pin low ========================//
@@ -88,8 +77,6 @@ void SSD1322_HW_drive_DC_high()
 void SSD1322_HW_drive_RESET_low()
 {
 	HAL_GPIO_WritePin(SPI2_RESET_GPIO_Port, SPI2_RESET_Pin, 0);
-
-	//HAL_GPIO_WritePin(SPI5_RESET_GPIO_Port, SPI5_RESET_Pin, 0);
 }
 
 //====================== RESET pin high ========================//
@@ -101,8 +88,6 @@ void SSD1322_HW_drive_RESET_low()
 void SSD1322_HW_drive_RESET_high()
 {
 	HAL_GPIO_WritePin(SPI2_RESET_GPIO_Port, SPI2_RESET_Pin, 1);
-
-	//HAL_GPIO_WritePin(SPI5_RESET_GPIO_Port, SPI5_RESET_Pin, 1);
 }
 
 //====================== Send single SPI byte ========================//
@@ -114,8 +99,6 @@ void SSD1322_HW_drive_RESET_high()
 void SSD1322_HW_SPI_send_byte(uint8_t byte_to_transmit)
 {
 	HAL_SPI_Transmit(&hspi2, &byte_to_transmit, 1, 10);
-
-	//HAL_SPI_Transmit(&hspi5, &byte_to_transmit, 1, 10);
 }
 
 //====================== Send array of SPI bytes ========================//
@@ -128,8 +111,6 @@ void SSD1322_HW_SPI_send_byte(uint8_t byte_to_transmit)
 void SSD1322_HW_SPI_send_array(uint8_t *array_to_transmit, uint32_t array_size)
 {
 	HAL_SPI_Transmit(&hspi2, array_to_transmit, array_size, 100);
-
-	//HAL_SPI_Transmit(&hspi5, array_to_transmit, array_size, 100);
 }
 
 //====================== Milliseconds delay ========================//
@@ -144,5 +125,5 @@ void SSD1322_HW_SPI_send_array(uint8_t *array_to_transmit, uint32_t array_size)
  */
 void SSD1322_HW_msDelay(uint32_t milliseconds)
 {
-	HAL_Delay(200);
+	HAL_Delay(milliseconds);
 }
