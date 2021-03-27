@@ -1,5 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
+# Toolchain: GNU Tools for STM32 (9-2020-q2-update)
 ################################################################################
 
 -include ../makefile.init
@@ -29,49 +30,55 @@ endif
 
 -include ../makefile.defs
 
-BUILD_ARTIFACT_NAME := rtc_remote
+OPTIONAL_TOOL_DEPS := \
+$(wildcard ../makefile.defs) \
+$(wildcard ../makefile.init) \
+$(wildcard ../makefile.targets) \
+
+
+BUILD_ARTIFACT_NAME := Oled
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX := 
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME).$(BUILD_ARTIFACT_EXTENSION)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-rtc_remote.elf \
+Oled.elf \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-rtc_remote.list \
+Oled.list \
 
 OBJCOPY_BIN += \
-rtc_remote.bin \
+Oled.bin \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: rtc_remote.elf secondary-outputs
+main-build: Oled.elf secondary-outputs
 
 # Tool invocations
-rtc_remote.elf: $(OBJS) $(USER_OBJS) G:\WorkspaceCube\rtc_remote\STM32F411CEUX_FLASH.ld
-	arm-none-eabi-gcc -o "rtc_remote.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"G:\WorkspaceCube\rtc_remote\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="rtc_remote.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Oled.elf: $(OBJS) $(USER_OBJS) G:\Workspace\Oled\STM32F411CEUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Oled.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"G:\Workspace\Oled\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Oled.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-default.size.stdout: $(EXECUTABLES)
+default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	arm-none-eabi-size  $(EXECUTABLES)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-rtc_remote.list: $(EXECUTABLES)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "rtc_remote.list"
+Oled.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "Oled.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-rtc_remote.bin: $(EXECUTABLES)
-	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "rtc_remote.bin"
+Oled.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "Oled.bin"
 	@echo 'Finished building: $@'
 	@echo ' '
 

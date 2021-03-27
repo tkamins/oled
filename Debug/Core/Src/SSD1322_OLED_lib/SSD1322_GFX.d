@@ -1,11 +1,11 @@
 Core/Src/SSD1322_OLED_lib/SSD1322_GFX.o: \
  ../Core/Src/SSD1322_OLED_lib/SSD1322_GFX.c \
- ../Core/Src/SSD1322_OLED_lib/../SSD1322_OLED_lib/SSD1322_API.h \
- c:\stm32_projects\rtc_remote\core\src\ssd1322_oled_lib\ssd1322_hw_driver.h \
- ../Core/Src/SSD1322_OLED_lib/../SSD1322_OLED_lib/SSD1322_GFX.h
+ g:\workspace\oled\core\src\ssd1322_oled_lib\ssd1322_api.h \
+ g:\workspace\oled\core\src\ssd1322_oled_lib\ssd1322_hw_driver.h \
+ g:\workspace\oled\core\src\ssd1322_oled_lib\ssd1322_gfx.h
 
-../Core/Src/SSD1322_OLED_lib/../SSD1322_OLED_lib/SSD1322_API.h:
+g:\workspace\oled\core\src\ssd1322_oled_lib\ssd1322_api.h:
 
-c:\stm32_projects\rtc_remote\core\src\ssd1322_oled_lib\ssd1322_hw_driver.h:
+g:\workspace\oled\core\src\ssd1322_oled_lib\ssd1322_hw_driver.h:
 
-../Core/Src/SSD1322_OLED_lib/../SSD1322_OLED_lib/SSD1322_GFX.h:
+g:\workspace\oled\core\src\ssd1322_oled_lib\ssd1322_gfx.h:
